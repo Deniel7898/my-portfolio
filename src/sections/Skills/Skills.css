@@ -1,0 +1,103 @@
+/* Container */
+.skills-container {
+  padding: 100px 10%;
+  background: #0d0d0d;
+  color: #fff;
+  text-align: center;
+}
+
+/* Title */
+.skills-title {
+  font-size: 42px;
+  font-weight: 800;
+  color: red;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+/* Wrapper for all category cards */
+.skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Category Card */
+.skill-category-card {
+  background: #222; /* Greyish dark */
+  padding: 25px 20px;
+  border-radius: 16px;
+  min-width: 220px;
+  flex: 1 1 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+/* Category Title */
+.skill-category-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: red;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Skills inside each card */
+.skill-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+/* Each skill item */
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateX(5px);
+}
+
+/* Icon styling */
+.skill-icon {
+  font-size: 22px;
+  color: red;
+}
+
+/* Skill name */
+.skill-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .skills-title {
+    font-size: 36px;
+  }
+
+  .skill-category-card {
+    min-width: 200px;
+    padding: 20px;
+  }
+
+  .skill-category-card h3 {
+    font-size: 18px;
+  }
+
+  .skill-name {
+    font-size: 13px;
+  }
+}
